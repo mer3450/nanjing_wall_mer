@@ -5,7 +5,7 @@
 <div class="container mt-5">
     <h1 class="mb-4">创建新城墙段落</h1>
     <form method="post" enctype="multipart/form-data">
-        {% csrf_token %}
+        
         {{ form.name.label_tag }}
         {{ form.name }}
         {{ form.description.label_tag }}
