@@ -52,7 +52,10 @@
                         <i class="fas fa-calendar-alt"></i> 建造年代：{{ section.built_year }}
                     </p>
                     <p class="card-text">
-                        <i class="fas fa-calendar-alt"></i> 创作者：{{ section.user }}
+                        <i class="fas fa-ruler"></i> 长度：{{ section.length }}
+                    </p>
+                    <p class="card-text">
+                        <i class="fas fa-user"></i> 创作者：{{ section.user }}
                     </p>
                     <a href="{% url 'section_detail' section.id %}" class="btn btn-outline-primary">
                         查看详情 <i class="fas fa-arrow-right"></i>
