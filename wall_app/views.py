@@ -9,7 +9,7 @@ from .forms import UserRegisterForm, UserContributionForm, createhistoricalevent
 def home(request):
     """首页视图"""
     sections = WallSection.objects.all()
-    contributions = UserContribution.objects.all().order_by('-created_at')[6:]  # 显示最新的6个贡献
+    contributions = UserContribution.objects.all()
     return render(request, 'home.html', {
         'sections': sections,
         'contributions': contributions
